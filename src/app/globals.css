@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* .dark klassi <html>'da bo'lsa dark: ishlaydi */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-lato);
+}
+
+body {
+  @apply bg-gray-100 text-[#333] dark:bg-gray-900 dark:text-white;
+}
